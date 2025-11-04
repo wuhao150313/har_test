@@ -1,0 +1,31 @@
+{
+  "module": {
+    "name": "har",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "HarAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1",
+      "car",
+      "wearable",
+      "tv"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "HarAbility",
+        "srcEntry": "./ets/harability/HarAbility.ets",
+        "description": "$string:HarAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:HarAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@har_study/axiostest",
+  "version": "1.0.0",
+  "description": "网络通信依赖测试包",
+  "main": "Index.ets",
+  "author": "your_name",
+  "license": "Apache-2.0",
+  "keywords": [
+    "harmonyos",
+    "utility",
+    "your-keywords"
+  ],
+  "repository": "https://github.com/your_username/your_repo.git",
+  "homepage": "https://github.com/your_username/your_repo",
+  "bugs": {
+    "url": "https://github.com/your_username/your_repo/issues",
+    "email": "your_email@example.com"
+  },
+  "engines": {
+    "harmonyos": ">=5.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "Index.ets",
+    "src/**/*",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}
+
