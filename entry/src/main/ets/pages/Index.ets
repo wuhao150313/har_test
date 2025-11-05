@@ -1,23 +1,22 @@
+import { DateUtils} from '@wuhao/axiostest';
+
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
+
+  @State now: string = DateUtils.format(new Date(), 'yyyy-MM-dd HH:mm:ss');
+  @State relative: string = DateUtils.fromNow(new Date(Date.now() - 3600000)); // "1小时前"
+
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
-        .onClick(() => {
-          this.message = 'Welcome';
-        })
+    Column({ space: 20 }) {
+
+      Text(this.now)
+      Text(this.relative)
+
     }
     .height('100%')
     .width('100%')
+    .padding(20)
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@har_study/axiostest",
+  "name": "@wuhao/axiostest",  // 新增组织前缀 @wuhao
   "version": "1.0.0",
   "description": "网络通信依赖测试包",
   "main": "Index.ets",
@@ -18,7 +18,9 @@
   "engines": {
     "harmonyos": ">=5.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ohos/hypium": "^1.0.0"
+  },
   "devDependencies": {},
   "files": [
     "Index.ets",
@@ -28,4 +30,3 @@
     "LICENSE"
   ]
 }
-
